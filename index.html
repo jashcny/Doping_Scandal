@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doping</title>
+    <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+    <body>
+
+
+      <!--- ============================Title and Intro ====================================  -->
+          <div class="dp-centered">
+              <div class="row">
+                  <h1 >The IAFF doping scandal</h1>
+                      <p>The WADA published a 350-page investigative report in response to Russian state-sponsored doping on November 9, 2015. Four days later, the IAAF voted to ban Russian athletes from the international competition. Here we take a look at athletes from 62 countries that received sanctions by the IAAF for the anti-doping rule violation.</p>
+              </div>
+          </div>
+
+
+
+
+      <!--- ============================First Section ====================================  -->
+          <div class="dp-centered">
+              <div class="row">
+                  <h3>Doping violations by Year</h3>
+              </div>
+
+              <div class="row">
+                  <div id="dopingByYear_Sex"></div>
+              </div>
+                  <hr class="section">
+          </div>
+
+
+
+
+      <!--- ============================Second Section ====================================  -->
+          <div class="dp-centered">
+              <div class="row">
+                  <h3>Doping Violations by Country</h3>
+                    <div id="worldMap"></div>
+              </div>
+                <hr class="section">
+          </div>
+
+
+
+
+      <!--- ============================Third Section ====================================  -->
+          <div class="dp-centered">
+              <div class="row">
+                  <h3>Sanctions</h3>
+              </div>
+
+              <div class="row">
+                  <div id="button-wrap">
+                    <div id="grouped" class="button group1 active">By Year</div>
+                    <div id="stacked" class="button stack1">By Country</div>
+                  </div>
+                  <div id="dopingSanction"></div>
+              </div>
+                <hr class="section">
+          </div>
+
+
+
+
+      <!--- ============================Fourth Section ====================================  -->
+          <div class="dp-centered">
+              <div class="row">
+                  <h3>Doping to Win</h3>
+              </div>
+
+              <div class="row">
+                  <p>Major substances and methods used for doping in sports</p>
+                      <img alt="Doping Substances" class="img-responsive" src="img/doping.svg">
+              </div>
+          </div>
+
+
+
+      <!--- ============================Fifth Section ====================================  -->
+          <div class="dp-centered">
+              <div class="row">
+                  <h3>Anti-doping violation rules, Top 8 </h3>
+                    <p>Anabolic agents are the most widespread substances used by track and field athletes. While having anabolic agents can improve their performance, these drugs will also lead to kidney failure and heart disease.</p>
+                    <p class="anabolic">Anabolic agents</p>
+                        <div class="top8Rule" id="top8Rule"></div>
+                    <p class="anabolic">Other</p>
+                        <div class="top8Rule_EPO" id="top8Rule_ABP"></div>
+                    <P class="top8RuleNote"> Notice: ABP Case - Use/attempted use of a prohibited substance/method</p>
+              </div>
+          </div>
+
+
+
+
+
+      <!--- ============================Source ====================================  -->
+            <div class="dp-centered">
+              <div class="row">
+                <p class="source">Source: WADA, IAAF, Scientific American, Reuters</p>
+              </div>
+            </div>
+
+
+      <!--- ============================tooltip ====================================  -->
+
+          <div id="tooltip3" class="mytooltip3">
+            <h3 class="yearG"></h3>
+              <div class="gender"></div>
+              <div class="yearVal"></div>
+          </div>
+
+          <div id="tooltip" class="mytooltip1">
+            <h3 class="area"></h3>
+              <hr class="hrMap">
+                <div class="title">Number of violation:</div>
+                <div class="val"></div>
+                <div class="title">Female: </div>
+                <div class="femaleVal"></div>
+                <div class="title">Male: </div>
+                <div class="maleVal"></div>
+          </div>
+
+
+
+
+        <!--- ============================ Library ====================================  -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="http://d3js.org/topojson.v1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.10.0/d3-legend.js"></script>
+        <script src="js/jquery-2.1.4.js"></script>
+        <script src="js/jquery.mobile.custom.min.js"></script>
+        <script src="js/queue.v1.min.js"></script>
+
+
+
+
+        <!--- ============================ Script ====================================  -->
+
+      	 <script src="js/queue_loading.js"></script>
+         <script src="js/dopingByYear_Gender.js"></script>
+         <script src="js/worldMap.js"></script>
+         <script src="js/dopingSanction.js"></script>
+         <script src="js/top8Rule_anabolic.js"></script>
+         <script src="js/top8Rule_ABP.js"></script>
+         <!-- <script src="js/dopingByYear.js"></script> -->
+
+
+       </body>
+    </html>

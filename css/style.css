@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+
+body {
+  color: black;
+  background: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  margin:0;
+  font-size: 17px;
+}
+
+.row {
+  width: 100%;
+  max-width: 960px;
+  position: relative;
+  padding: 0 2%;
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+h1 {
+  font-size: 1.85em;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 1.2em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+
+p {
+  margin-top: 5px;
+  margin-bottom: 22px;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  font-weight: 300;
+}
+
+img {
+  margin-bottom: 25px;
+}
+
+.x.axis {
+  font-size: .85em;
+  font-weight: 300;
+}
+
+.y.axis {
+  font-size: .85em;
+  font-weight: 300;
+}
+
+.legend {
+  font-size: .9em;
+  font-weight: 300;
+}
+
+.dp-centered{
+  float: none;
+  margin: auto;
+  max-width:1170px;
+}
+
+hr.section  {
+  margin-top: 1%;
+  margin-bottom: 20px;
+}
+
+
+/*---------------------------- Bar Chart By Year------------------------*/
+
+
+#focused {
+    stroke-width: 3px;
+    stroke-opacity: 100%;
+    font-size:17px;
+    font-weight: bold;
+  }
+
+
+.axis2 path,
+.axis2 line {
+fill: none;
+stroke: black;
+stroke-width: 0.5px;
+  }
+
+.axis2 .tick:first-child line{
+stroke:black;
+stroke-width:0.5px;
+stroke-dasharray: 0;
+}
+
+
+.mytooltip3 {
+    position: absolute;
+    z-index: 10;
+    width: 95px;
+    padding: 8px;
+    background: #ffffff;
+    pointer-events: none;
+    border: black 1px solid;
+    font-weight: 400;
+}
+
+.mytooltip3 h3 {
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.mytooltip3 .gender{
+  font-size: .85em;
+  margin-top: 0;
+}
+
+.mytooltip3 .yearVal{
+  font-size: .9em;
+  float: right;
+  font-weight: 300;
+  margin-top: -20px;
+}
+
+
+/*---------------------------- World Map------------------------*/
+
+.countries {
+    stroke: #fff;
+    stroke-width:0.8px;
+   stroke-linejoin: round;
+}
+
+.countries .selected {
+    stroke: white;
+    stroke-width: 2.5px;
+    stroke-opacity:1;
+}
+
+hr.hrMap {
+  border-color: black;
+  margin-bottom: 5px;
+  margin-top: -8px;
+}
+
+.scalebutton {
+    cursor: pointer;
+}
+
+rect.overlay{
+    fill: none;
+}
+
+.label{
+  font-size: .9em;
+  font-weight: 300;
+}
+
+.mytooltip1 {
+    position: absolute;
+    z-index: 10;
+    text-align: left;
+    width: 13%;
+    padding: 8px;
+    font-size: 10px;
+    background: #ffffff;
+    pointer-events: none;
+    border: black 1px solid;
+}
+
+li {
+  list-style: none;
+}
+
+.mytooltip1 h3 {
+  font-size: 1.85em;
+  line-height: 1.2em;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.mytooltip1 .title {
+    /*float: left;*/
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.mytooltip1 .val {
+    /*float: left;*/
+    font-size: 1.7em;
+}
+
+.mytooltip1 .femaleVal {
+    /*float: left;*/
+    font-size: 1.7em;
+}
+
+.mytooltip1 .maleVal {
+    /*float: left;*/
+    font-size: 1.7em;
+}
+
+
+
+/*-----------------------Bar Chart_Sanction ----------------------*/
+
+#button-wrap div{
+  height: 6%;
+  margin-top: 1%;
+  margin-bottom: 50px;
+}
+
+.button {
+  cursor: pointer;
+  float: left;
+  text-align: center;
+  border: 1px solid black;
+  display: block;
+  font-size: .9em;
+  padding: 7px;
+  color:black;
+  text-transform: uppercase;
+}
+
+.button.active {
+  pointer-events: none;
+  background-color:black;
+  color:white
+}
+
+.axisB {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+
+.mytooltip4 {
+    position: absolute;
+    z-index: 10;
+
+}
+
+.mytooltip4 p{
+  font-size: 15px;
+  width:110%;
+  background-color: rgba(255,255,255,0.8);
+  line-height: 1.4em;
+  border: black 1px solid;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
+
+/*-----------------------Section 4&5----------------------*/
+.bar rect {
+  fill:  #FB7841;
+}
+
+.grid1 {
+    opacity: 1;
+    stroke: #AAA;
+    stroke-width:0.8;
+    /*stroke-dasharray: 1.2,4;*/
+}
+
+.domain {
+  opacity: 0;
+}
+
+.tick:first-child line{
+  stroke:black;
+  stroke-width:2;
+  stroke-dasharray: 0;
+}
+
+div.top8Rule {
+  margin-top: 10px;
+}
+
+p.top8RuleNote {
+  font-size: .7em;
+}
+
+p.anabolic {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.label1 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.mytooltip2 {
+    position: absolute;
+    z-index: 10;
+}
+
+.mytooltip2 p{
+  font-size: 15px;
+  width:110%;
+  background-color: rgba(255,255,255,0.8);
+  line-height: 1.4em;
+  border: black 1px solid;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+/*-----------------------Bar Chart about Top 8 Rule----------------------*/
+
+
+p.source{
+ font-size: .85em;
+}
