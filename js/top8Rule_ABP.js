@@ -3,7 +3,7 @@ function top8Rule_ABP_EPO(data){
             var fullwidth = 920,
                 fullheight = 150;
 
-            var margin = {top: 40, right:1, bottom: 10, left: 220},
+            var margin = {top: 40, right:1, bottom: 10, left: 222},
                 width = fullwidth - margin.right - margin.left,
                 height = fullheight - margin.top - margin.bottom;
 

@@ -3,7 +3,7 @@ function top8Rule_Anabolic (data){
            var fullwidth = 920,
                fullheight = 350;
 
-           var margin = {top: 30, right:1, bottom: 10, left: 220},
+           var margin = {top: 30, right:1, bottom: 10, left: 222},
                width = fullwidth - margin.right - margin.left,
                height = fullheight - margin.top - margin.bottom;
 
